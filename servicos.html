@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <script defer src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <title>Serviços - Barbearia Barber</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header-service" id="servicos">
+
+        <nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="./imgs/logotipo-barber.png" alt="logotipo"></a>
+            </div>
+
+            <ul>
+                <li class="hideMobile"><a href="index.html">Início</a></li>
+                <li class="hideMobile"><a href="servicos.html">Serviços</a></li>
+                <li class="hideMobile"><a href="sobre.html">Sobre</a></li>
+                <li class="hideMobile"><a href="index.html#galery">Galeria</a></li>
+                <li class="hideMobile"><a href="contato.html">Contato</a></li>
+                <li class="hideDesktop" onclick=showSidebar()><a href="#"><svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+
+            <ul class="sidebar">
+
+                <li onclick=hideSidebar()><a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="index.html#galery">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="container-text-service">
+
+            <div class="text-service">
+                <h1>Um novo conceito em <span>Barbearia!</span></h1>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    scrambled it to make a type specimen.</p>
+
+                <button class="btn-agenda" onclick="window.location.href='contato.html'">Fazer Agendamento
+                    Agora!</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <section class="services">
+
+            <h2 class="title">Nossos <span>Serviços</span></h2>
+
+            <div class="container-services">
+                <div class="container-img">
+                    <img src="./imgs/cadeira-de-barbearia.png" alt="cadeira-de-barbearia">
+                </div>
+
+                <div class="cards-box">
+
+                    <div class="box01">
+                        <img src="./imgs/corte.png" alt="corte">
+                        <h3>Corte na tesoura</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.</p>
+                    </div>
+
+                    <div class="box02">
+                        <img src="./imgs/corte maquina.png" alt="corte-maquina">
+                        <h3>Corte na máquina</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.</p>
+                    </div>
+
+                    <div class="box03">
+                        <img src="./imgs/barba.png" alt="barba-bigode">
+                        <h3>Barba e bigode</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.</p>
+                    </div>
+
+                    <div class="box04">
+                        <img src="./imgs/navalha.png" alt="corte-navalhado">
+                        <h3>Corte navalhado</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPE -->
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="content-footer">
+                <h2>Nossa <span>Localização</span></h2>
+                <p><img width="20" height="20" src="https://img.icons8.com/ios/20/f7ad06/marker--v1.png"
+                        alt="marker--v1" />Rua Sizino Garcia, 1023 - Jaraguá do Sul - SC</p>
+                <p><img width="20" height="20" src="https://img.icons8.com/forma-light/20/f7ad06/phone.png"
+                        alt="phone" />Telefone: (47) 9999-9999</p>
+                <p><img width="20" height="20" src="https://img.icons8.com/ios/20/f7ad06/new-post--v1.png"
+                        alt="new-post--v1" />E-mail: contato@barber.com.br</p>
+
+                <h2>Nossas <span>Redes Sociais</span></h2>
+                <img width="40" height="40" src="https://img.icons8.com/ios/40/ffffff/instagram-new--v1.png"
+                    alt="instagram-new--v1" />
+                <img width="40" height="40" src="https://img.icons8.com/ios/40/ffffff/youtube-play--v1.png"
+                    alt="youtube-play--v1" />
+                <img width="40" height="40" src="https://img.icons8.com/ios/40/ffffff/whatsapp--v1.png"
+                    alt="whatsapp--v1" />
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.514191622305!2d-49.08955668499667!3d-26.486308983483736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd5a1f7b6f6b7b%3A0xeadc8aa2f3f4e0e2!2sR.%20Sizino%20Garcia%2C%201023%20-%20Jaragu%C3%A1%20do%20Sul%20-%20SC%2C%2089230-060!5e0!3m2!1spt-BR!2sbr!4v1696222636595!5m2!1spt-BR!2sbr"
+                    width="100%" height="471" style="border:20;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-end">
+            <a href="#servicos"><img src="./imgs/logotipo-barber.png" alt="logotipo"></a>
+            <p>BARBEARIA BARBER | © 2026 Todos os direitos reservados - Developer by: <a
+                    href="https://sidneydesigner.com.br"><span>Sidney Silva</span></a></p>
+        </div>
+
+    </footer>
+
+    <script>
+
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const lenis = new Lenis();
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+        });
+
+    </script>
+
+</body>
+
+</html>
